@@ -32,7 +32,7 @@ class OrderItem(models.Model):
     quatity = models.PositiveIntegerField(default=0,null=True,blank=True)
     date_added = models.DateTimeField(auto_now_add=True)
 
-class shippingaddress(models.Model):
+class Shippingaddress(models.Model):
     customer = models.ForeignKey(Customer,on_delete=models.SET_NULL,blank=True,null=True)
     order = models.ForeignKey(Order,on_delete=models.SET_NULL,blank=True,null=True)
     address = models.CharField(max_length=200,null=True)
