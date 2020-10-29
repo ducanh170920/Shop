@@ -34,7 +34,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Shop" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1jV32QJ3Q9g6BwOlgXz3eNEUmSC" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -73,6 +73,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="446" y="358" width="1020" height="428" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603880173633">
