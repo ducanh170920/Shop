@@ -31,8 +31,16 @@ class Order(models.Model):
     complete = models.BooleanField(default=False,null=True,blank=False)
     transactionID = models.CharField(max_length=200,null=True)
 
-    def __str__(self):
-        return str(self.id)
+    @property
+
+    def shipping(self):
+        shipping = False
+        orderitem = self.orderitem_set.all()
+        for i in orderitem:
+            if i.product.digital == False:
+                shipping = True
+        return shipping
+
     def get_number_item(self):
         orderitem = self.orderitem_set.all()
         sum = 0;

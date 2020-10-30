@@ -1,4 +1,4 @@
-var updateBtns =document.getElementsByClassName('update-cart')
+var updateBtns = document.getElementsByClassName('update-cart')
 
 for(var i = 0 ; i < updateBtns.length ; i++){
     updateBtns[i].addEventListener('click',function(){
@@ -6,7 +6,6 @@ for(var i = 0 ; i < updateBtns.length ; i++){
         var action = this.dataset.action
         console.log('productId:',productId,'action:',action)
         console.log(user)
-
         if(user ==="AnonymousUser"){
             console.log('Not logged in')
         }else{
@@ -16,6 +15,7 @@ for(var i = 0 ; i < updateBtns.length ; i++){
 }
 function updateUserOrder(productId,action){
     var url = '/update_item/'
+    console.log("abc");
     fetch(url,{
         method : "POST",
         headers:{
@@ -29,6 +29,7 @@ function updateUserOrder(productId,action){
         })
         .then((data)=>{
             console.log('data:',data)
+            location.reload()
         })
 
 
